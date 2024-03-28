@@ -1,6 +1,6 @@
 body {
   color: #222;
-  font-family: {{ $.Site.Params.body_font | default "'Roboto', sans-serif" }};
+  font-family: {{ $.Site.Params.font | default "'Roboto', sans-serif" }};
   line-height: 1.5;
   margin: 1rem;
   max-width: 768px;
