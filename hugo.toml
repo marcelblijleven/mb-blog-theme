@@ -21,3 +21,10 @@ weight = 30
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
+
+[params]
+  google_fonts = [
+    ["Inconsolata", "400, 400i, 700, 700i"]
+  ]
+
+  font = "Inconsolata"
