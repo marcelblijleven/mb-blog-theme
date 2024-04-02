@@ -15,5 +15,5 @@
 <!--   {{- $styles = $styles | fingerprint -}} -->
 <!-- {{ else }} -->
   {{- $styles = $styles | minify | fingerprint -}}
-{{ end -}}
+<!-- {{ end -}} -->
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
