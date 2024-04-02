@@ -8,8 +8,8 @@ pageRef = '/'
 weight = 10
 
 [[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
+name = 'Blog'
+pageRef = '/blog'
 weight = 20
 
 [[menus.main]]
@@ -28,3 +28,8 @@ weight = 30
   ]
 
   font = "Inconsolata"
+  linkedin = "linkedin url"
+  github = "github url"
+
+[taxonomies]
+  tags = "tags"
