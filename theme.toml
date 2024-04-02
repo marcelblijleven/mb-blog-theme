@@ -1,31 +1,17 @@
-name = 'Theme name'
+name = 'MB Blog Theme'
 license = 'MIT'
-licenselink = 'https://github.com/owner/repo/LICENSE'
-description = 'Theme description'
+licenselink = 'https://github.com/marcelblijleven/mb-blog-theme/LICENSE'
+description = 'A blog focussed theme using Tailwind'
 
-# The home page of the theme, where the source can be found
-homepage = 'https://github.com/owner/repo'
+homepage = 'https://github.com/marcelblijleven/mb-blog-theme/'
 
-# If you have a running demo of the theme
-demosite = 'https://owner.github.io/repo'
+demosite = 'https://www.marcelblijleven.com'
 
 # Taxonomy terms
 tags = ['blog', 'company']
 features = ['some', 'awesome', 'features']
 
-# If the theme has multiple authors
-authors = [
-  {name = 'Name of author', homepage = 'Website of author'},
-  {name = 'Name of author', homepage = 'Website of author'}
-]
-
-# If the theme has a single author
 [author]
-  name = 'Your name'
-  homepage = 'Your website'
+  name = 'Marcel Blijleven'
+  homepage = 'https://www.marcelblijleven.com'
 
-# If porting an existing theme
-[original]
-  author = 'Name of original author'
-  homepage = 'Website of original author'
-  repo = 'https://github.com/owner/repo'
