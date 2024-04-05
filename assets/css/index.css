@@ -712,12 +712,20 @@ nav a:not([class="active"]):hover {
   width: 100%;
 }
 
+.min-w-\[70px\] {
+  min-width: 70px;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
 
 .max-w-none {
   max-width: none;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .grow {
@@ -738,6 +746,10 @@ nav a:not([class="active"]):hover {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-stretch {
+  justify-content: stretch;
 }
 
 .gap-2 {
@@ -776,10 +788,6 @@ nav a:not([class="active"]):hover {
 .divide-gray-700 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-divide-opacity));
-}
-
-.overflow-auto {
-  overflow: auto;
 }
 
 .whitespace-nowrap {
@@ -845,6 +853,11 @@ nav a:not([class="active"]):hover {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -969,6 +982,18 @@ nav a:not([class="active"]):hover {
   }
 
   .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
   }
