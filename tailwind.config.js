@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
-  content: [
-    "./themes/**/layouts/**/*.html",
-    "./layouts/**/*.html"
-  ],
+  content: ["./themes/**/layouts/**/*.html", "./layouts/**/*.html"],
   theme: {
     container: {
       center: true,
@@ -71,4 +68,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

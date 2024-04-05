@@ -782,6 +782,14 @@ nav a:not([class="active"]):hover {
   border-color: rgb(55 65 81 / var(--tw-divide-opacity));
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -960,10 +968,6 @@ nav a:not([class="active"]):hover {
 }
 
 @media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
-
   .md\:gap-4 {
     gap: 1rem;
   }
@@ -981,6 +985,10 @@ nav a:not([class="active"]):hover {
 
   .xl\:row-span-2 {
     grid-row: span 2 / span 2;
+  }
+
+  .xl\:block {
+    display: block;
   }
 
   .xl\:max-w-5xl {

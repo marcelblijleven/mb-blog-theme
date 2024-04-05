@@ -1,9 +1,11 @@
-<table class="whitespace-nowrap">
-  {{ partial "partials/table/header" .headers }}
-  {{ range .values }}
-    {{ partial "partials/table/row" . }}
-  {{ end }}
-</table>
+<div class="overflow-scroll">
+  <table class="whitespace-nowrap">
+    {{ partial "partials/table/header" .headers }}
+    {{ range .values }}
+      {{ partial "partials/table/row" . }}
+    {{ end }}
+  </table>
+</div>
 
 {{- define "partials/table/header" }}
   <thead class="[&_tr]:border-b">
