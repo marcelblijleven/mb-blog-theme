@@ -6,9 +6,11 @@
     </dd>
   </dl>
   <h2 class="my-2 text-sm md:text-base font-bold grow">
-    <a href="{{ .RelPermalink }}" class="hover:underline"> {{ .LinkTitle }} </a>
+    <a href="{{ .RelPermalink }}" class="hover:underline">
+      {{ .LinkTitle }}
+    </a>
   </h2>
-  <div class="hidden md:block">
+  <div class="hidden xl:block">
     {{ range .GetTerms "tags" }}{{ partial "tag.html" . }}{{ end }}
   </div>
 </article>
