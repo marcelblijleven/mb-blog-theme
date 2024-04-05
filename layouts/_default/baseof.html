@@ -1,20 +1,24 @@
-<!DOCTYPE html>
-<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
-<head>
-  {{ partial "head.html" . }}
-</head>
-<body class="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
-  <div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
-  <div class="flex h-screen flex-col justify-between font-inconsolata">
-      {{ partial "header.html" . }}
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
-
-  </div>
-  </div>
-</body>
+<!doctype html>
+<html
+  lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body
+    class="bg-white text-black antialiased dark:bg-gray-950 dark:text-white"
+  >
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+      <div class="flex h-screen flex-col font-inconsolata">
+        {{ partial "header.html" . }}
+        <main class="grow">
+          {{ block "main" . }}{{ end }}
+        </main>
+        <footer>
+          {{ partial "footer.html" . }}
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
