@@ -1,16 +1,17 @@
 <div class="overflow-scroll">
   <table class="whitespace-nowrap">
-    {{ partial "partials/table/header" .headers }}
-    {{ range .values }}
-      {{ partial "partials/table/row" . }}
+    {{ partial "partials/table/header" . }}
+    {{ range $k, $v := . }}
+      {{ partial "partials/table/row" $v }}
     {{ end }}
   </table>
 </div>
 
 {{- define "partials/table/header" }}
   <thead class="[&_tr]:border-b">
-    {{ range . }}
-      {{ partial "partials/table/head" . }}
+    {{ $first := index . 0 }}
+    {{ range $k, $_ := $first }}
+      {{ partial "partials/table/head" $k }}
     {{ end }}
   </thead>
 {{- end }}
@@ -39,9 +40,9 @@
 
 {{- define "partials/table/head" }}
   <th
-    class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+    class="h-12 px-4 text-left align-middle font-semibold text-muted-foreground [&:has([role=checkbox])]:pr-0"
   >
-    {{- . }}
+    {{- replace . "_" " " | strings.FirstUpper }}
   </th>
 {{- end }}
 
