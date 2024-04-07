@@ -782,10 +782,6 @@ nav a:not([class="active"]):hover {
   border-color: rgb(55 65 81 / var(--tw-divide-opacity));
 }
 
-.overflow-auto {
-  overflow: auto;
-}
-
 .overflow-scroll {
   overflow: scroll;
 }
@@ -863,6 +859,10 @@ nav a:not([class="active"]):hover {
   font-weight: 500;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -887,6 +887,11 @@ nav a:not([class="active"]):hover {
 
 .text-muted-foreground {
   color: hsl(var(--muted-foreground));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .antialiased {
