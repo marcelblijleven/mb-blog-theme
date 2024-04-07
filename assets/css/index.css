@@ -811,6 +811,10 @@ nav a:not([class="active"]):hover {
   padding: 1rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -819,6 +823,11 @@ nav a:not([class="active"]):hover {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pb-8 {
@@ -887,11 +896,6 @@ nav a:not([class="active"]):hover {
 
 .text-muted-foreground {
   color: hsl(var(--muted-foreground));
-}
-
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .antialiased {

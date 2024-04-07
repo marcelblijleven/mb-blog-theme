@@ -40,14 +40,14 @@
 
 {{- define "partials/table/head" }}
   <th
-    class="h-12 px-4 text-left align-middle font-semibold text-muted-foreground [&:has([role=checkbox])]:pr-0"
+    class="h-12 p-2 text-left align-middle font-semibold text-muted-foreground [&:has([role=checkbox])]:pr-0"
   >
     {{- replace . "_" " " | strings.FirstUpper }}
   </th>
 {{- end }}
 
 {{- define "partials/table/data" }}
-  <td class="p-4 align-middle [&:has([role=checkbox])]:pr-0 whitespace-nowrap">
+  <td class="p-2 align-middle [&:has([role=checkbox])]:pr-0 whitespace-nowrap">
     {{- . }}
   </td>
 {{- end }}
