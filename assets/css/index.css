@@ -807,10 +807,6 @@ nav a:not([class="active"]):hover {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -823,11 +819,6 @@ nav a:not([class="active"]):hover {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .pb-8 {
