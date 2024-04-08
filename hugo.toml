@@ -2,6 +2,14 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
+[markup]
+  [markup.highlight]
+    noClasses = false
+    style = "gruvbox"
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
@@ -30,6 +38,7 @@ weight = 30
   font = "Inconsolata"
   linkedin = "linkedin url"
   github = "github url"
+  asciinema-theme = "gruvbox"
 
 [taxonomies]
   tags = "tags"
