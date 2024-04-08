@@ -1,19 +1,9 @@
-<!-- {{- with resources.Get "css/index.css" }} -->
-<!--   {{- if eq hugo.Environment "development" }} -->
-<!--     <link rel="stylesheet" href="{{ .RelPermalink }}"> -->
-<!--   {{- else }} -->
-<!--     {{- with . | minify | fingerprint }} -->
-<!--       <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"> -->
-<!--     {{- end }} -->
-<!--   {{- end }} -->
-<!-- {{- end }} -->
-<!---->
-<!---->
 {{- $styles := resources.Get "css/index.css" -}}
-<!-- Uncomment lines below when Cloudflare hugo version is at v0.120 or higher
-<!-- {{- if hugo.IsDevelopment }} -->
-<!--   {{- $styles = $styles | fingerprint -}} -->
-<!-- {{ else }} -->
+
+{{- if hugo.IsDevelopment }}
+  {{- $styles = $styles | fingerprint -}}
+{{ else }}
   {{- $styles = $styles | minify | fingerprint -}}
-<!-- {{ end -}} -->
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{ end -}}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+<link rel="stylesheet" href="/css/custom-highlight-syntax.css" />
