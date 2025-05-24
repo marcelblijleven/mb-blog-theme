@@ -666,6 +666,18 @@ nav a:not([class="active"]):hover {
   border-width: 0;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -782,20 +794,12 @@ nav a:not([class="active"]):hover {
   border-color: rgb(55 65 81 / var(--tw-divide-opacity));
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .overflow-scroll {
   overflow: scroll;
 }
 
 .whitespace-nowrap {
   white-space: nowrap;
-}
-
-.rounded-lg {
-  border-radius: var(--radius);
 }
 
 .border-b {
@@ -927,6 +931,14 @@ nav a:not([class="active"]):hover {
   }
 }
 
+.\[background-image\:radial-gradient\(\#d4d4d4_1px\2c transparent_1px\)\] {
+  background-image: radial-gradient(#d4d4d4 1px,transparent 1px);
+}
+
+.\[background-size\:20px_20px\] {
+  background-size: 20px 20px;
+}
+
 .hover\:bg-muted\/50:hover {
   background-color: hsl(var(--muted) / 0.5);
 }
@@ -965,6 +977,10 @@ nav a:not([class="active"]):hover {
 .dark\:text-white:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark\:\[background-image\:radial-gradient\(\#404040_1px\2c transparent_1px\)\]:is(.dark *) {
+  background-image: radial-gradient(#404040 1px,transparent 1px);
 }
 
 @media (min-width: 640px) {
