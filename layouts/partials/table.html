@@ -9,7 +9,7 @@
 
 {{- define "partials/table/header" }}
   <thead class="[&_tr]:border-b">
-    {{ $first := index . 0 }}
+    {{ $first := index (.) 0 }}
     {{ range $k, $_ := $first }}
       {{ partial "partials/table/head" $k }}
     {{ end }}
